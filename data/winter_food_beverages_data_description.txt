@@ -1,0 +1,25 @@
+SYNTHETIC DATASET: Winter Food & Beverages (2022–2025)
+
+Data story
+This synthetic dataset represents weekly winter-season product performance for a retailer that sells a mix of winter foods and warm beverages across multiple regions and sales channels. Each record corresponds to an observed product-week combination, including basic product attributes, nutrition indicators, pricing/discount information, and realized sales volume. The dataset is designed for tasks such as demand segmentation, pricing analysis, customer/market profiling, and predictive modeling.
+
+Columns (15)
+1) Year (categorical, integer): Calendar year of the observation. Values: 2022, 2023, 2024, 2025.
+2) SeasonWeek (numeric, integer): Week number within the winter season (1–13).
+3) Region (categorical): Sales region where the observation is recorded. Values: North, South, East, West, Central.
+4) SalesChannel (categorical): Sales channel. Values: Online, Supermarket, Cafe, Convenience, Wholesale.
+5) Category (categorical): High-level product group. Values: Food, Beverage.
+6) Product (categorical): Specific winter food or beverage item name.
+7) PackageType (categorical): Packaging/serving format (e.g., Cup, Bottle, Can, Bowl, Box, Bag).
+8) DietLabel (categorical): Dietary label or formulation category (e.g., Regular, Vegan, Gluten-Free, Low-Sugar, Dairy-Free).
+9) UnitPrice_USD (numeric, continuous): Final unit selling price in USD.
+10) Calories_kcal (numeric, continuous): Calories per serving (kcal).
+11) Sugar_g (numeric, continuous): Sugar content per serving (grams).
+12) SpiceIndex (numeric, continuous): Spiciness/warming spice intensity index on a 0–10 scale.
+13) DiscountRate (numeric, continuous): Discount fraction applied to the unit price (0.000–0.400).
+14) UnitsSold (numeric, integer): Units sold for the product in the given week.
+15) DemandSegment (target, categorical): Demand segment label based on sales performance. Values: Low, Medium, High.
+
+Notes
+- This dataset is synthetic and created for educational/analytical purposes.
+- UnitsSold is a realized quantity and may vary substantially across products, channels, weeks, and years.
